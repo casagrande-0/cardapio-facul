@@ -22,7 +22,12 @@ Visual aconchegante (vermelho, marrom, laranja, tons de madeira)
 Cardápio legível e funcional no celular (principal canal de acesso)
 Identificação clara de restrições alimentares (glúten, lactose)
 
+# SEMPRE QUE ABRIR O CODIGO DIGITE O SEGUINTE COMANDO NO TERMINAL:
+"git pull"
+Isso serve para baixar a ultima versão modificada que foi enviada para o Git, caso alguém tenha feito alguma alteração, voçê baixa essas alterações para o seu PC
+
 # SEMPRE QUE FIZER ALTERAÇOES, EXECULTAR OS SEGUINTES COMANDOS NO TERMINAL:
-git add .
-git commit -m "Descrição da alteração"
-git push
+"git add ."
+"git commit -m "Descrição da alteração""
+"git push"
+Isso serve para enviar suas alterações para o git
