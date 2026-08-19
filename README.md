@@ -21,3 +21,8 @@ Botão de WhatsApp visível em todas as páginas
 Visual aconchegante (vermelho, marrom, laranja, tons de madeira)
 Cardápio legível e funcional no celular (principal canal de acesso)
 Identificação clara de restrições alimentares (glúten, lactose)
+
+# SEMPRE QUE FIZER ALTERAÇOES, EXECULTAR OS SEGUINTES COMANDOS NO TERMINAL:
+git add .
+git commit -m "Descrição da alteração"
+git push
