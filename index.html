@@ -3,65 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sabor & Código — restaurante e cardápio digital.">
-  <title>Sabor & Código | Restaurante</title>
+  <title>Cardápio | Sabor & Código</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="topbar">
-    <nav class="nav" aria-label="Navegação principal">
-      <a href="index.html" class="brand">
-        <span class="brand-code">&lt;/&gt;</span>
-        <span class="brand-name">Sabor &amp; Código</span>
-      </a>
-      <div class="nav-links">
-        <a href="cardapio.html">Cardápio</a>
-        <a href="sobre.html">Sobre Nós</a>
-        <a href="reserva.html">Reserva</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-    <div class="hero-main">
-      <div class="eyebrow">// Bem-vindo ao</div>
-      <h1>Sabor <span>e</span> Código</h1>
-      <p>
-        Comida feita com paixão e linhas de código. Um cardápio digital
-        próprio, rápido e pensado primeiro para o celular.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="cardapio.html">Ver cardápio</a>
-        <a class="btn btn-secondary" href="reserva.html">Reservar mesa</a>
-      </div>
+<header class="barra-superior">
+  <nav class="navegacao" aria-label="Navegação principal">
+    <a href="index.html" class="marca">
+      <span class="codigo-marca">&lt;/&gt;</span>
+      <span class="nome-marca">Sabor &amp; Código</span>
+    </a>
+    <div class="links-navegacao">
+      <a href="cardapio.html" class="ativo">Cardápio</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="reserva.html">Reserva</a>
     </div>
+  </nav>
+</header>
 
-    <div class="hero-side">
-      <img
-        src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85"
-        alt="Mesa com pratos do restaurante">
-      <div class="hero-side-info">
-        <strong>Hoje tem sabor novo.</strong>
-        <small>Confira o prato do dia e escolha sua próxima experiência.</small>
+<main>
+<section class="secao" id="cardapio">
+  <div class="cabecalho-secao">
+    <div>
+      <div class="subtitulo">// pratos principais</div>
+      <h1>Cardápio</h1>
+    </div>
+    <p>Informações de glúten, lactose e opções vegetarianas/veganas.</p>
+  </div>
+
+  <div class="lista-menu">
+    <h2>// Lista rápida do cardápio</h2>
+    <ul>
+      <li><strong>Entradas:</strong> Bruschetta Commit, Salada Fresh</li>
+      <li><strong>Principais:</strong> Garden Full Stack, Pasta.Execute(), Frango Full Stack, Código do Chef, Veggie Loop</li>
+      <li><strong>Sobremesas:</strong> Chocolate Algorithm, Cake If, Doce Commit</li>
+      <li><strong>Bebidas:</strong> RefriGelado(), Suco Natural, Água Mineral, Cerveja Artesanal</li>
+    </ul>
+  </div>
+
+  <div class="envoltorio-tabela-menu">
+    <h3>// Tabela de preços</h3>
+    <div class="rolagem-tabela-menu">
+      <table class="tabela-menu">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Categoria</th>
+            <th>Descrição</th>
+            <th>Restrições / opção</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Bruschetta Commit</td><td>Entrada</td><td>Pão artesanal, tomate, manjericão e azeite.</td><td>Glúten · Vegetariano</td><td class="preco-tabela">R$ 19,90</td></tr>
+          <tr><td>Salada Fresh</td><td>Entrada</td><td>Folhas, cenoura, tomate, sementes e molho cítrico.</td><td>Vegano · Sem glúten</td><td class="preco-tabela">R$ 18,90</td></tr>
+          <tr><td>Garden Full Stack</td><td>Principal</td><td>Arroz integral, legumes, grão-de-bico e molho da casa.</td><td>Vegano · Sem glúten · Sem lactose</td><td class="preco-tabela">R$ 34,90</td></tr>
+          <tr><td>Pasta.Execute()</td><td>Principal</td><td>Massa artesanal ao molho cremoso da casa.</td><td>Glúten · Lactose</td><td class="preco-tabela">R$ 32,90</td></tr>
+          <tr><td>Frango Full Stack</td><td>Principal</td><td>Frango grelhado, arroz, legumes e molho de ervas.</td><td>Sem glúten · Sem lactose</td><td class="preco-tabela">R$ 34,90</td></tr>
+          <tr><td>Código do Chef</td><td>Principal</td><td>Carne grelhada, arroz cremoso e farofa especial.</td><td>Lactose</td><td class="preco-tabela">R$ 42,90</td></tr>
+          <tr><td>Veggie Loop</td><td>Principal</td><td>Legumes, quinoa, folhas e molho de tahine.</td><td>Vegano · Sem glúten · Sem lactose</td><td class="preco-tabela">R$ 31,90</td></tr>
+          <tr><td>Chocolate Algorithm</td><td>Sobremesa</td><td>Brownie de chocolate com calda e sorvete.</td><td>Glúten · Lactose</td><td class="preco-tabela">R$ 16,90</td></tr>
+          <tr><td>Cake If</td><td>Sobremesa</td><td>Bolo de chocolate com cobertura cremosa.</td><td>Glúten · Lactose</td><td class="preco-tabela">R$ 15,90</td></tr>
+          <tr><td>Doce Commit</td><td>Sobremesa</td><td>Café espresso com doce artesanal da casa.</td><td>Vegano</td><td class="preco-tabela">R$ 12,90</td></tr>
+          <tr><td>RefriGelado()</td><td>Bebida</td><td>Refrigerante artesanal servido bem gelado.</td><td>Sem lactose</td><td class="preco-tabela">R$ 6,00</td></tr>
+          <tr><td>Suco Natural</td><td>Bebida</td><td>Suco de frutas da estação.</td><td>Vegano · Sem glúten</td><td class="preco-tabela">R$ 8,00</td></tr>
+          <tr><td>Água Mineral</td><td>Bebida</td><td>Água mineral com ou sem gás.</td><td>Vegano · Sem glúten · Sem lactose</td><td class="preco-tabela">R$ 4,50</td></tr>
+          <tr><td>Cerveja Artesanal</td><td>Bebida</td><td>Seleção de cervejas artesanais.</td><td>Contém glúten</td><td class="preco-tabela">R$ 14,90</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <article class="destaque">
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=85" alt="Bowl colorido com legumes">
+    <div class="conteudo-destaque">
+      <span class="rotulo-dia">★ Prato do dia</span>
+      <h3>Garden Full Stack</h3>
+      <p>Bowl de arroz integral, legumes grelhados, grão-de-bico, ervas frescas e molho da casa.</p>
+      <div class="dietas">
+        <span class="etiqueta verde">🌱 Vegano</span>
+        <span class="etiqueta verde">✓ Sem lactose</span>
+        <span class="etiqueta verde">✓ Sem glúten</span>
       </div>
+      <p class="preco">R$ 34,90</p>
     </div>
-  </section>
-  </main>
+  </article>
 
-  <footer>
-    <div class="footer-inner">
-      <span>&lt;/&gt; Sabor &amp; Código — Restaurante</span>
-      <span>Feito para funcionar bem no celular.</span>
+  <div class="grupo-menu" data-category-group="entradas">
+    <h3>// Entradas</h3>
+    <div class="cartoes">
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=800&q=80" alt="Bruschetta artesanal"><div class="corpo-cartao"><h3>Bruschetta Commit</h3><p>Pão artesanal, tomate fresco, manjericão e azeite.</p><div class="rodape-cartao"><span class="etiqueta verde">Vegetariano</span><span class="preco">R$ 19,90</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Salada fresca"><div class="corpo-cartao"><h3>Salada Fresh</h3><p>Folhas, cenoura, tomate, sementes e molho cítrico.</p><div class="rodape-cartao"><span class="etiqueta verde">Vegano</span><span class="preco">R$ 18,90</span></div></div></article>
     </div>
-  </footer>
+  </div>
 
-  <a class="whatsapp"
-     href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20falar%20com%20o%20Sabor%20%26%20Código."
-     target="_blank" rel="noopener"
-     aria-label="Falar com o Sabor & Código pelo WhatsApp"
-     title="Fale conosco no WhatsApp">☎</a>
+  <div class="grupo-menu" data-category-group="principais">
+    <h3>// Principais</h3>
+    <div class="cartoes">
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Prato de massa"><div class="corpo-cartao"><h3>Pasta.Execute()</h3><p>Massa artesanal ao molho cremoso da casa.</p><div class="rodape-cartao"><span class="etiqueta">Glúten · Lactose</span><span class="preco">R$ 32,90</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80" alt="Frango grelhado"><div class="corpo-cartao"><h3>Frango Full Stack</h3><p>Frango grelhado, arroz, legumes e molho de ervas.</p><div class="rodape-cartao"><span class="etiqueta verde">Sem glúten</span><span class="preco">R$ 34,90</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Carne grelhada"><div class="corpo-cartao"><h3>Código do Chef</h3><p>Carne grelhada, arroz cremoso e farofa especial.</p><div class="rodape-cartao"><span class="etiqueta">Lactose</span><span class="preco">R$ 42,90</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Bowl vegetariano"><div class="corpo-cartao"><h3>Veggie Loop</h3><p>Legumes, quinoa, folhas e molho de tahine.</p><div class="rodape-cartao"><span class="etiqueta verde">Vegano</span><span class="preco">R$ 31,90</span></div></div></article>
+    </div>
+  </div>
 
-  <div class="toast" id="toast" role="status"></div>
+  <div class="grupo-menu" data-category-group="sobremesas">
+    <h3>// Sobremesas</h3>
+    <div class="cartoes">
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80" alt="Sobremesa de chocolate"><div class="corpo-cartao"><h3>Chocolate Algorithm</h3><p>Brownie de chocolate com calda e sorvete.</p><div class="rodape-cartao"><span class="etiqueta">Glúten · Lactose</span><span class="preco">R$ 16,90</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Bolo de chocolate"><div class="corpo-cartao"><h3>Cake If</h3><p>Bolo de chocolate com cobertura cremosa.</p><div class="rodape-cartao"><span class="etiqueta">Glúten · Lactose</span><span class="preco">R$ 15,90</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Café"><div class="corpo-cartao"><h3>Doce Commit</h3><p>Café espresso com doce artesanal da casa.</p><div class="rodape-cartao"><span class="etiqueta verde">Vegano</span><span class="preco">R$ 12,90</span></div></div></article>
+    </div>
+  </div>
+
+  <div class="grupo-menu" data-category-group="bebidas">
+    <h3>// Bebidas</h3>
+    <div class="cartoes">
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80" alt="Bebida refrescante"><div class="corpo-cartao"><h3>RefriGelado()</h3><p>Refrigerante artesanal servido bem gelado.</p><div class="rodape-cartao"><span class="etiqueta verde">Sem lactose</span><span class="preco">R$ 6,00</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=800&q=80" alt="Suco natural"><div class="corpo-cartao"><h3>Suco Natural</h3><p>Suco de frutas da estação.</p><div class="rodape-cartao"><span class="etiqueta verde">Vegano</span><span class="preco">R$ 8,00</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=800&q=80" alt="Água"><div class="corpo-cartao"><h3>Água Mineral</h3><p>Com ou sem gás.</p><div class="rodape-cartao"><span class="etiqueta verde">Sem glúten</span><span class="preco">R$ 4,50</span></div></div></article>
+      <article class="cartao"><img src="https://images.unsplash.com/photo-1603644475732-0e95ef315881?auto=format&fit=crop&w=800&q=80" alt="Cerveja artesanal"><div class="corpo-cartao"><h3>Cerveja Artesanal</h3><p>Seleção de cervejas artesanais.</p><div class="rodape-cartao"><span class="etiqueta vermelho">Contém glúten</span><span class="preco"> R$ 14,90</span></div></div></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="conteudo-rodape">
+    <span>&lt;/&gt; Sabor &amp; Código — Restaurante</span>
+    <span>Feito para funcionar bem no celular.</span>
+  </div>
+</footer>
+
+<a class="botao-whatsapp" href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20falar%20com%20o%20Sabor%20%26%20Código." target="_blank" rel="noopener" aria-label="Falar com o Sabor & Código pelo WhatsApp">☎</a>
+
+<div class="notificacao" id="toast" role="status"></div>
+<script src="js/script.js"></script>
 </body>
 </html>

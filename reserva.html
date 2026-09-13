@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <nav class="nav" aria-label="Navegação principal">
-      <a href="index.html" class="brand">
-        <span class="brand-code">&lt;/&gt;</span>
-        <span class="brand-name">Sabor &amp; Código</span>
+  <header class="barra-superior">
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a href="index.html" class="marca">
+        <span class="codigo-marca">&lt;/&gt;</span>
+        <span class="nome-marca">Sabor &amp; Código</span>
       </a>
-      <div class="nav-links">
+      <div class="links-navegacao">
         <a href="cardapio.html">Cardápio</a>
         <a href="sobre.html">Sobre Nós</a>
         <a href="reserva.html">Reserva</a>
@@ -23,35 +23,35 @@
   </header>
 
   <main>
-    <section class="section" id="reserva">
-      <div class="section-heading">
+    <section class="secao" id="reserva">
+      <div class="cabecalho-secao">
         <div>
-          <div class="eyebrow">// reserva de mesa</div>
-          <h2>Reserve sua mesa</h2>
+          <div class="subtitulo">// reserva de mesa</div>
+          <h1>Reserve sua mesa</h1>
         </div>
       </div>
 
-      <div class="reservation">
-        <div class="reservation-intro">
+      <div class="reserva">
+        <div class="introducao-reserva">
           <h2>Seu lugar está esperando.</h2>
           <p>
             Preencha os dados e enviaremos a solicitação de reserva.
             Para confirmações rápidas, você também pode falar diretamente
             pelo WhatsApp.
           </p>
-          <div class="dietary">
-            <span class="tag green">✓ Confirmação rápida</span>
-            <span class="tag">⌕ Atendimento online</span>
+          <div class="dietas">
+            <span class="etiqueta verde">✓ Confirmação rápida</span>
+            <span class="etiqueta">⌕ Atendimento online</span>
           </div>
         </div>
 
-        <form class="reservation-form" id="reservationForm">
-          <div class="field">
+        <form class="formulario-reserva" id="reservationForm">
+          <div class="campo">
             <label for="nome">Nome</label>
             <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
           </div>
 
-          <div class="field">
+          <div class="campo">
             <label for="pessoas">Pessoas</label>
             <select id="pessoas" name="pessoas" required>
               <option value="">Selecione</option>
@@ -65,24 +65,24 @@
             </select>
           </div>
 
-          <div class="field">
+          <div class="campo">
             <label for="data">Data</label>
             <input id="data" name="data" type="date" required>
           </div>
 
-          <div class="field">
+          <div class="campo">
             <label for="horario">Horário</label>
             <input id="horario" name="horario" type="time" required>
           </div>
 
-          <div class="field full">
+          <div class="campo completo">
             <label for="observacoes">Observações</label>
             <textarea id="observacoes" name="observacoes" placeholder="Ex.: aniversário, cadeira infantil, restrição alimentar..."></textarea>
           </div>
 
-          <div class="form-message" id="formMessage"></div>
+          <div class="mensagem-formulario" id="formMessage"></div>
 
-          <button class="btn btn-primary field full" type="submit">
+          <button class="botao botao-principal campo completo" type="submit">
             Solicitar reserva
           </button>
         </form>
@@ -91,18 +91,18 @@
   </main>
 
   <footer>
-    <div class="footer-inner">
+    <div class="conteudo-rodape">
       <span>&lt;/&gt; Sabor &amp; Código — Restaurante</span>
-      <span>Feito para funcionar bem no celular.</span>
     </div>
   </footer>
 
-  <a class="whatsapp"
+  <a class="botao-whatsapp"
      href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20falar%20com%20o%20Sabor%20%26%20Código."
      target="_blank" rel="noopener"
      aria-label="Falar com o Sabor & Código pelo WhatsApp"
      title="Fale conosco no WhatsApp">☎</a>
 
-  <div class="toast" id="toast" role="status"></div>
+  <div class="notificacao" id="toast" role="status"></div>
+
 </body>
 </html>
