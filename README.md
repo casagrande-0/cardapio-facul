@@ -3,7 +3,6 @@ Atividade Desenvolvimento Web
 
 # INTEGRANTES
 -Guilherme
--João
 -Renan
 
 ## OBJETIVO:
